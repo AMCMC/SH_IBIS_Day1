@@ -1,0 +1,56 @@
+"","Kingdom","Phylum","Class","Order","Family","Genus","MC1","MC2","MC3","MC4"
+"MC_1 Rhodococcus MC_1","Bacteria","Actinobacteria","Actinobacteria","Actinomycetales","Nocardiaceae","Rhodococcus",NA,1.82,1.16,0.001
+"MC_2 Micrococcus MC_2","Bacteria","Actinobacteria","Actinobacteria","Actinomycetales","Micrococcaceae","Micrococcus",NA,1.82,1.16,0.01
+"MC_3 Bifidobacterium MC_3","Bacteria","Actinobacteria","Actinobacteria","Bifidobacteriales","Bifidobacteriaceae","Bifidobacterium",5.88,1.82,1.16,0.1
+"MC_4 Bifidobacterium MC_4","Bacteria","Actinobacteria","Actinobacteria","Bifidobacteriales","Bifidobacteriaceae","Bifidobacterium",NA,1.82,1.16,2.49
+"MC_5 Bifidobacterium MC_5","Bacteria","Actinobacteria","Actinobacteria","Bifidobacteriales","Bifidobacteriaceae","Bifidobacterium",NA,1.82,1.16,NA
+"MC_6 Bifidobacterium MC_6","Bacteria","Actinobacteria","Actinobacteria","Bifidobacteriales","Bifidobacteriaceae","Bifidobacterium",NA,1.82,1.16,NA
+"MC_7 Bifidobacterium MC_7","Bacteria","Actinobacteria","Actinobacteria","Bifidobacteriales","Bifidobacteriaceae","Bifidobacterium",NA,1.82,1.16,NA
+"MC_8 Bifidobacterium MC_8","Bacteria","Actinobacteria","Actinobacteria","Bifidobacteriales","Bifidobacteriaceae","Bifidobacterium",NA,1.82,1.16,NA
+"MC_9 Bifidobacterium MC_9","Bacteria","Actinobacteria","Actinobacteria","Bifidobacteriales","Bifidobacteriaceae","Bifidobacterium",NA,1.82,1.16,NA
+"MC_10 Bifidobacterium MC_10","Bacteria","Actinobacteria","Actinobacteria","Bifidobacteriales","Bifidobacteriaceae","Bifidobacterium",NA,1.82,1.16,NA
+"MC_11 Bacteroides MC_11","Bacteria","Bacteroidetes","Bacteroidia","Bacteroidales","Bacteroidaceae","Bacteroides",NA,1.82,1.16,2.49
+"MC_12 Bacteroides MC_12","Bacteria","Bacteroidetes","Bacteroidia","Bacteroidales","Bacteroidaceae","Bacteroides",NA,1.82,1.16,2.49
+"MC_13 Bacteroides MC_13","Bacteria","Bacteroidetes","Bacteroidia","Bacteroidales","Bacteroidaceae","Bacteroides",NA,1.82,1.16,2.49
+"MC_14 Bacteroides MC_14","Bacteria","Bacteroidetes","Bacteroidia","Bacteroidales","Bacteroidaceae","Bacteroides",NA,1.82,1.16,2.49
+"MC_15 Bacteroides MC_15","Bacteria","Bacteroidetes","Bacteroidia","Bacteroidales","Bacteroidaceae","Bacteroides",NA,1.82,4.07,2.49
+"MC_16 Bacteroides MC_16","Bacteria","Bacteroidetes","Bacteroidia","Bacteroidales","Bacteroidaceae","Bacteroides",5.88,1.82,1.16,2.49
+"MC_17 Parabacteroides MC_17","Bacteria","Bacteroidetes","Bacteroidia","Bacteroidales","Porphyromonadaceae","Parabacteroides",5.88,1.82,4.65,0.001
+"MC_18 Prevotella MC_18","Bacteria","Bacteroidetes","Bacteroidia","Bacteroidales","Prevotellaceae","Prevotella",5.88,1.82,1.16,0.1
+"MC_19 Alistipes MC_19","Bacteria","Bacteroidetes","Bacteroidia","Bacteroidales","Rikenellaceae","Alistipes",5.88,1.82,8.14,0.01
+"MC_20 Bacillus MC_20","Bacteria","Firmicutes","Bacilli","Bacillales","Bacillaceae 1","Bacillus",NA,1.82,1.16,2.49
+"MC_21 Bacillus MC_21","Bacteria","Firmicutes","Bacilli","Bacillales","Bacillaceae 1","Bacillus",NA,1.82,1.16,2.49
+"MC_22 Granulicatella MC_22","Bacteria","Firmicutes","Bacilli","Lactobacillales","Carnobacteriaceae","Granulicatella",NA,1.82,1.16,2.49
+"MC_23 Enterococcus MC_23","Bacteria","Firmicutes","Bacilli","Lactobacillales","Enterococcaceae","Enterococcus",NA,1.82,1.16,2.49
+"MC_24 Lactobacillus MC_24","Bacteria","Firmicutes","Bacilli","Lactobacillales","Lactobacillaceae","Lactobacillus",NA,1.82,1.16,2.49
+"MC_25 Lactobacillus MC_25","Bacteria","Firmicutes","Bacilli","Lactobacillales","Lactobacillaceae","Lactobacillus",NA,1.82,1.16,2.49
+"MC_26 Lactobacillus MC_26","Bacteria","Firmicutes","Bacilli","Lactobacillales","Lactobacillaceae","Lactobacillus",NA,1.82,1.16,2.49
+"MC_27 Lactococcus MC_27","Bacteria","Firmicutes","Bacilli","Lactobacillales","Streptococcaceae","Lactococcus",NA,1.82,1.16,2.49
+"MC_28 Streptococcus MC_28","Bacteria","Firmicutes","Bacilli","Lactobacillales","Streptococcaceae","Streptococcus",5.88,1.82,1.16,2.49
+"MC_29 Streptococcus MC_29","Bacteria","Firmicutes","Bacilli","Lactobacillales","Streptococcaceae","Streptococcus",NA,1.82,1.16,2.49
+"MC_30 Clostridium_sensu_stricto MC_30","Bacteria","Firmicutes","Clostridia","Clostridiales","Clostridiaceae 1","Clostridium sensu stricto",5.88,1.82,1.16,2.49
+"MC_31 Anaerostipes MC_31","Bacteria","Firmicutes","Clostridia","Clostridiales","Lachnospiraceae","Anaerostipes",5.88,1.82,1.16,2.49
+"MC_32 Blautia MC_32","Bacteria","Firmicutes","Clostridia","Clostridiales","Lachnospiraceae","Blautia",5.88,1.82,5.81,0.001
+"MC_33 Dorea MC_33","Bacteria","Firmicutes","Clostridia","Clostridiales","Lachnospiraceae","Dorea",5.88,1.82,1.16,2.49
+"MC_34 Lachnospiracea_incertae_sedis MC_34","Bacteria","Firmicutes","Clostridia","Clostridiales","Lachnospiraceae","Lachnospiracea_incertae_sedis",5.88,1.82,1.16,2.49
+"MC_35 Lachnospiracea_incertae_sedis MC_35","Bacteria","Firmicutes","Clostridia","Clostridiales","Lachnospiraceae","Lachnospiracea_incertae_sedis",5.88,1.82,1.16,2.49
+"MC_36 Lachnospiracea_incertae_sedis MC_36","Bacteria","Firmicutes","Clostridia","Clostridiales","Lachnospiraceae","Lachnospiracea_incertae_sedis",NA,1.82,1.16,2.49
+"MC_37 Roseburia MC_37","Bacteria","Firmicutes","Clostridia","Clostridiales","Lachnospiraceae","Roseburia",5.88,1.82,8.72,0.01
+"MC_38 Ruminococcus2 MC_38","Bacteria","Firmicutes","Clostridia","Clostridiales","Lachnospiraceae","Ruminococcus2",NA,1.82,1.16,2.49
+"MC_39 Clostridium_XI MC_39","Bacteria","Firmicutes","Clostridia","Clostridiales","Peptostreptococcaceae","Clostridium XI",5.88,1.82,1.16,2.49
+"MC_40 Clostridium_IV MC_40","Bacteria","Firmicutes","Clostridia","Clostridiales","Ruminococcaceae","Clostridium IV",NA,1.82,1.16,2.49
+"MC_41 Faecalibacterium MC_41","Bacteria","Firmicutes","Clostridia","Clostridiales","Ruminococcaceae","Faecalibacterium",5.88,1.82,6.98,0.1
+"MC_42 Veillonella MC_42","Bacteria","Firmicutes","Negativicutes","Selenomonadales","Veillonellaceae","Veillonella",NA,1.82,1.16,2.49
+"MC_43 Fusobacterium MC_43","Bacteria","Fusobacteria","Fusobacteriia","Fusobacteriales","Fusobacteriaceae","Fusobacterium",NA,1.82,1.74,2.49
+"MC_44 Victivallis MC_44","Bacteria","Lentisphaerae","Lentisphaeria","Victivallales","Victivallaceae","Victivallis",NA,1.82,0.58,2.49
+"MC_45 Citrobacter MC_45","Bacteria","Proteobacteria","Gammaproteobacteria","Enterobacteriales","Enterobacteriaceae","Citrobacter",NA,1.82,1.16,2.49
+"MC_46 Enterobacter MC_46","Bacteria","Proteobacteria","Gammaproteobacteria","Enterobacteriales","Enterobacteriaceae","Enterobacter",NA,1.82,1.16,2.49
+"MC_47 Enterobacter MC_47","Bacteria","Proteobacteria","Gammaproteobacteria","Enterobacteriales","Enterobacteriaceae","Enterobacter",NA,1.82,1.16,2.49
+"MC_48 Enterobacter MC_48","Bacteria","Proteobacteria","Gammaproteobacteria","Enterobacteriales","Enterobacteriaceae","Enterobacter",NA,1.82,1.16,2.49
+"MC_49 Escherichia/Shigella MC_49","Bacteria","Proteobacteria","Gammaproteobacteria","Enterobacteriales","Enterobacteriaceae","Escherichia/Shigella",5.88,1.82,4.07,2.49
+"MC_50 Klebsiella MC_50","Bacteria","Proteobacteria","Gammaproteobacteria","Enterobacteriales","Enterobacteriaceae","Klebsiella",NA,1.82,1.16,2.49
+"MC_51 Salmonella MC_51","Bacteria","Proteobacteria","Gammaproteobacteria","Enterobacteriales","Enterobacteriaceae","Salmonella",NA,1.82,1.16,2.49
+"MC_52 Serratia MC_52","Bacteria","Proteobacteria","Gammaproteobacteria","Enterobacteriales","Enterobacteriaceae","Serratia",NA,1.82,1.16,2.49
+"MC_53 Pseudomonas MC_53","Bacteria","Proteobacteria","Gammaproteobacteria","Pseudomonadales","Pseudomonadaceae","Pseudomonas",NA,1.82,1.16,2.49
+"MC_54 Pseudomonas MC_54","Bacteria","Proteobacteria","Gammaproteobacteria","Pseudomonadales","Pseudomonadaceae","Pseudomonas",NA,1.82,1.16,2.49
+"MC_55 Akkermansia MC_55","Bacteria","Verrucomicrobia","Verrucomicrobiae","Verrucomicrobiales","Verrucomicrobiaceae","Akkermansia",5.88,1.82,2.91,2.49
