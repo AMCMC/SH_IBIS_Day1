@@ -1,0 +1,275 @@
+---
+title: "R Basics Tutorial"
+output:
+  html_document:
+    toc: yes
+    toc_depth: 2
+    number_sections: yes
+    theme: united
+  pdf_document:
+    toc: yes
+    toc_depth: '2'
+---
+
+<style>
+p.caption {
+  font-size: 0.8em;
+}
+</style>
+
+```{r setup rmd, include=FALSE}
+# setting global options for the rmd markdown
+knitr::opts_chunk$set(echo = T) # include chunck code
+knitr::opts_chunk$set(cache = F) # use chuck results from cache if not modified (speed)
+```
+
+# Table of Contents
+
+* Workspace
+* Data Structures in R
+* Phyloseq: Working with Microbial Data
+* Tidyverse: Data Manipulation and Transformation
+* ggplot2: Data Visualization
+
+# Data Structures in R
+Data structures are ways of organizing data in R. The most common structures include:
+
+Vectors
+A vector is a one-dimensional array that holds elements of the same type.
+
+```{r}
+# Numeric vector
+numeric_vector <- c(1, 2, 3, 4, 5)
+numeric_vector
+
+# Character vector
+character_vector <- c("a", "b", "c")
+character_vector
+```
+
+Data Frames
+A data frame is a table or a 2D array-like structure where each column can contain a different type.
+
+```{r}
+# Create a data frame
+df <- data.frame(
+  id = 1:5,
+  name = c("Alice", "Bob", "Charlie", "David", "Eve"),
+  score = c(10, 20, 30, 40, 50)
+)
+df
+```
+
+Lists
+
+A list is a flexible structure that can hold objects of different types.
+
+```{r}
+# Create a list
+my_list <- list(name = "Alice", age = 25, scores = c(95, 80, 85))
+my_list
+```
+
+Matrices
+
+A matrix is a 2D array where all elements must be of the same type.
+
+```{r}
+# Create a matrix
+matrix_data <- matrix(1:9, nrow = 3, ncol = 3)
+matrix_data
+```
+
+Factors
+
+Factors are used for categorical data and can have levels.
+
+```{r}
+# Create a factor
+factor_data <- factor(c("High", "Low", "Medium", "High"))
+factor_data
+```
+
+# R Workspace
+
+The Environment in R includes the workspace where objects (such as data frames, functions, and variables) are stored. Understanding how to manage your R environment can help avoid conflicts and keep your workspace clean.
+
+Key Environment Functions
+
+ls(): Lists all objects in the current environment.
+rm(object_name): Removes a specific object.
+rm(list = ls()): Clears all objects in the environment.
+RStudio Environment Panel: Lists all objects visually (in RStudio only).
+Example:
+
+```{r}
+# List all objects in the environment
+ls()
+
+# Create a sample object
+my_data <- data.frame(x = 1:5, y = letters[1:5])
+
+# Remove an object
+rm(my_data)
+```
+
+Tip: Use the Environment tab in RStudio to see objects, clear variables, and manage your workspace easily.
+
+# Functions
+
+There are many functions available in base R which can be used for data manipulation, statistical testing and visualization.
+
+```{r}
+Sys.Date()
+```
+
+Perform a function on columns or rows of a matrix.
+
+```{r}
+matrix_data
+apply(matrix_data, 1, max)
+apply(matrix_data, 2, max)
+```
+
+Basic Visualization
+
+```{r}
+barplot(df$score, names.arg = df$name)
+```
+
+You can get information by preceding a function with a question mark.
+You should see a description popup in the Help pane.
+
+```{r, eval=F}
+?prcomp()
+```
+
+The most common used base functions in R are:
+
+```{r, eval=F}
+c() #Combine values into a vector or list.
+seq(): #Generate sequences of numbers.
+rep(): #Repeat elements.
+length() #Get the length of an object.
+sort(), order(), rank() #Sort, order, or rank elements.
+unique(): #Find unique elements in a vector.
+table(): # Create a frequency table of a variable.
+match() # Get positions of a variable in vector in a second vector
+```
+
+# Phyloseq: Working with Microbial Data
+
+Besides base R functions, libraries with more specific functions can be installed and loaded into the environment. On such a library is Phyloseq, which has multiple functions for handling and analyzing microbiome data. It’s commonly used for data from amplicon sequencing studies  and can store taxonomic, phylogenetic, and abundance data in one object.
+
+## Basic Phyloseq Usage
+
+A Phyloseq object typically consists of several components:
+
+otu_table: Stores the abundance data (OTU or ASV table).
+sample_data: Contains metadata for each sample.
+tax_table: Holds taxonomic information.
+phy_tree: Stores the phylogenetic tree.
+
+```{r} 
+library(phyloseq)
+
+# Load a sample dataset included with phyloseq
+data(GlobalPatterns)
+
+# Subset the data (e.g., only samples from a specific environment)
+subset_data <- subset_samples(GlobalPatterns, SampleType == "Feces")
+
+# Calculate alpha diversity
+alpha_diversity <- estimate_richness(subset_data, measures = c("Shannon", "Observed"))
+alpha_diversity
+```
+
+# Tidyverse: Data Manipulation and Transformation
+
+The Tidyverse is a collection of R packages for data manipulation, cleaning, and visualization. It includes popular packages such as dplyr (data manipulation), tidyr (data reshaping), and ggplot2 (data visualization).
+
+## Key Tidyverse Functions
+Using dplyr for Data Manipulation
+filter(): Select rows based on conditions.
+select(): Choose specific columns.
+mutate(): Add or modify columns.
+summarize(): Aggregate data.
+
+```{r}
+library(dplyr)
+
+# Create a sample data frame
+df <- data.frame(
+  name = c("Alice", "Bob", "Charlie", "David", "Eve"),
+  score = c(10, 20, 30, 40, 50)
+)
+```
+
+```{r}
+# Filter rows where score > 25
+df_filtered <- df %>% filter(score > 25)
+df_filtered
+
+# Add a new column
+df_mutated <- df %>% mutate(score_squared = score^2)
+df_mutated
+
+# Summarize the data
+df_summary <- df %>% summarize(mean_score = mean(score))
+df_summary
+```
+
+# ggplot2: Data Visualization
+ggplot2 is part of the Tidyverse and is a powerful system for creating visualizations.
+
+Basic Syntax
+In ggplot2, plots are built by layering components:
+
+ggplot(data): Initializes the plot with data.
+aes(x, y): Defines aesthetics, like x and y axes, but also variable used for coloring, grouping etc. 
+geom_*(): Adds different plot types, like points, lines, and bars.
+Example Plotting Workflow
+
+```{r}
+# Load ggplot2
+library(ggplot2)
+
+# Create a sample data frame
+df <- data.frame(
+  category = c("A", "B", "C"),
+  value = c(3, 5, 2)
+)
+
+# Basic bar plot
+ggplot(df, aes(x = category, y = value)) +
+  geom_bar(stat = "identity") +
+  labs(title = "Bar Plot Example", x = "Category", y = "Value") +
+  theme_minimal() +
+  NULL # added for easy commenting or unmommenting previous layers
+```
+
+Plotting Phyloseq Data with ggplot2
+Phyloseq has functions that integrate with ggplot2, allowing easy visualization of microbiome data.
+
+```{r}
+phyloseq::plot_richness(GlobalPatterns, measures = "Shannon", x = "SampleType")
+```
+
+But data can also easily be converted into a dataframe using 'psmelt'
+
+```{r}
+# Transform phyloseq data to a format that ggplot2 can use
+phyloseq_data <- prune_taxa(names(sort(taxa_sums(GlobalPatterns), decreasing = T)[1:6]), GlobalPatterns) %>% psmelt() 
+
+# Create a box plot of abundance by sample type
+ggplot(phyloseq_data, aes(x = SampleType, y = Abundance)) +
+  geom_boxplot() +
+  geom_jitter() + 
+  labs(title = "Microbial Abundance by Sample Type") +
+  facet_wrap(~OTU, scales="free") + 
+  theme_minimal() +
+  NULL
+```
+
+This guide should provide a good foundation for basic R usage, including handling the environment, using core data structures, analyzing microbiome data with Phyloseq, transforming data with Tidyverse, and creating visualizations with ggplot2. Practice and exploration will help solidify these skills!
+
