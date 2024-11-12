@@ -41,8 +41,8 @@ This workshop can be perfomed on any machine running Rstudio. However might requ
 
 You can gain acces to the server trough your browser:
 
-http://3.78.246.83/
-name: name_lastname
+http://18.197.136.58/
+name: email credentials (no dots)
 pass: SHIBIS
 
 You will need to download the associated files and rmarkdown file which was used to generate this tutorial by cloning the associated github repository. You can easily do this from within the Rstudio interface. 
